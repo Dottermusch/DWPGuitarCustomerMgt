@@ -73,9 +73,9 @@
  				<label for="shipCity">Ship City:</label> 
  				<input type="text" name="shipCity" value="${shipAddress.getCity()}" required ><br>
  				<label for="shipState">Ship State:</label>
- 				<input type="text" name="shipState" value="${shipAddress.getState()}" required ><br> 
+ 				<input type="text" name="shipState" value="${shipAddress.getState()}" maxlength="2" required ><br> 
  				<label for="shipPostalCode">Ship Zip Code:</label> 
- 				<input type="text" name="shipPostalCode" value="${shipAddress.getZipCode()}" required ><br><br>		
+ 				<input type="text" name="shipPostalCode" value="${shipAddress.getZipCode()}" maxlength="10" required ><br><br>		
  				 
 <!-- 				Bill To Address -->
 
@@ -85,9 +85,9 @@
  				<label for="billingCity">Billing City:</label> 
  				<input type="text" name="billingCity" value="${billAddress.getCity()}" required ><br>
  				<label for="billingState">Billing State:</label>
- 				<input type="text" name="billingState" value="${billAddress.getState()}" required ><br> 
+ 				<input type="text" name="billingState" value="${billAddress.getState()}" maxlength="2" required ><br> 
  				<label for="billingPostalCode">Billing Zip Code:</label> 
- 				<input type="text" name="billingPostalCode" value="${billAddress.getZipCode()}" required ><br><br>	
+ 				<input type="text" name="billingPostalCode" value="${billAddress.getZipCode()}" maxlength="10" required ><br><br>	
 				
 				<!-- submit button to initiate the customer deletion -->
 				<input type="submit" value="Update Record" class="btn btn-primary btn-lg">

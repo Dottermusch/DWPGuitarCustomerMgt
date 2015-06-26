@@ -70,9 +70,9 @@
  				<label for="shipCity">Ship City:</label> 
  				<input type="text" name="shipCity" required ><br>
  				<label for="shipState">Ship State:</label>
- 				<input type="text" name="shipState" required ><br> 
+ 				<input type="text" name="shipState" maxlength="2" required ><br> 
  				<label for="shipPostalCode">Ship Zip Code:</label> 
- 				<input type="text" name="shipPostalCode" required ><br><br>		
+ 				<input type="text" name="shipPostalCode" maxlength="10" required ><br><br>		
  				 
 <!-- 				Bill To Address -->
 
@@ -81,9 +81,9 @@
  				<label for="billingCity">Billing City:</label> 
  				<input type="text" name="billingCity" required ><br>
  				<label for="billingState">Billing State:</label>
- 				<input type="text" name="billingState" required ><br> 
+ 				<input type="text" name="billingState" maxlength="2" required ><br> 
  				<label for="billingPostalCode">Billing Zip Code:</label> 
- 				<input type="text" name="billingPostalCode" required ><br><br>	
+ 				<input type="text" name="billingPostalCode" maxlength="10" required ><br><br>	
 				
 				<!-- submit button to initiate the customer deletion -->
 				<input type="submit" value="Add Record" class="btn btn-primary btn-lg">

@@ -152,6 +152,8 @@ public class CustomerDB
 		String qString = "SELECT c FROM Customer c ORDER BY c.customerId";
 		TypedQuery<Customer> q = em.createQuery(qString, Customer.class);
 		
+		q.setHint("javax.persistence.cache.storeMode", "REFRESH"); // test record to refresh after adding customer
+		
 		List<Customer> customers;
 		
 		try
