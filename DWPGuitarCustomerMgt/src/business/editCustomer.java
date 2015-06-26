@@ -68,6 +68,13 @@ public class editCustomer extends HttpServlet {
 				request.setAttribute("billAddress", billAddress);
 			}
 			
+			else if (addresses.size() == 1)
+			{
+				shipAddress = addresses.get(0);
+				request.setAttribute("shipAddress", shipAddress);
+				request.setAttribute("billAddress", null);
+			}
+			
 			request.setAttribute("custToModify", custToModify);
 			
 			session.setAttribute("originalCust", custToModify);		// Store unedited Customer object for recall after the edit;

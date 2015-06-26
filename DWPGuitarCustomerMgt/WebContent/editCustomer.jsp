@@ -1,10 +1,10 @@
-<body><%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Add Customer</title>
+<title>Edit Customer</title>
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	
@@ -30,7 +30,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Add Customer</a>
+          <a class="navbar-brand" href="#">Edit Customer</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
@@ -45,7 +45,7 @@
     <div class="container">
 	    ${message}
 	    <div class="jumbotron">
-		  <h1>Customer Summary List</h1>
+		  <h1>Update Customer Detail</h1>
 		  <p>
 <!-- 		  <a class="btn btn-primary btn-lg float-left" href="editCustomer" role="button">Edit Customer</a> -->
 <!-- 		  <a class="btn btn-primary btn-lg float-left margin_left" href="deleteCustomer" role="button">Delete Customer</a> -->
@@ -87,10 +87,10 @@
  				<label for="billingState">Billing State:</label>
  				<input type="text" name="billingState" value="${billAddress.getState()}" required ><br> 
  				<label for="billingPostalCode">Billing Zip Code:</label> 
- 				<input type="text" name="billingPostalCode" value="${shipAddress.getZipCode()}" required ><br><br>	
+ 				<input type="text" name="billingPostalCode" value="${billAddress.getZipCode()}" required ><br><br>	
 				
 				<!-- submit button to initiate the customer deletion -->
-				<input type="submit" value="Add Record">
+				<input type="submit" value="Update Record" class="btn btn-primary btn-lg">
 			</form>
 		</div>
 		${subTitle}

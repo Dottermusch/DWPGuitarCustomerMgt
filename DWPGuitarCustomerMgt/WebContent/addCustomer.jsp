@@ -1,4 +1,4 @@
-<body><%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -45,7 +45,7 @@
     <div class="container">
 	    ${message}
 	    <div class="jumbotron">
-		  <h1>Customer Summary List</h1>
+		  <h1>Add New Customer</h1>
 		  <p>
 <!-- 		  <a class="btn btn-primary btn-lg float-left" href="editCustomer" role="button">Edit Customer</a> -->
 <!-- 		  <a class="btn btn-primary btn-lg float-left margin_left" href="deleteCustomer" role="button">Delete Customer</a> -->
@@ -86,7 +86,7 @@
  				<input type="text" name="billingPostalCode" required ><br><br>	
 				
 				<!-- submit button to initiate the customer deletion -->
-				<input type="submit" value="Add Record">
+				<input type="submit" value="Add Record" class="btn btn-primary btn-lg">
 			</form>
 		</div>
 		${subTitle}

@@ -141,7 +141,7 @@ public class index extends HttpServlet {
 					}
 								
 					tableInfo += "<tr><td>" + df.format(o.getOrderDate()) + "</td><td style=\"text-align:right\">" +
-								 			  o.getOrderId() + "</td><td style=\"text-align:right\">" +
+								"<a href='getOrderDetail?orderId=" + o.getOrderId() + "'>" + o.getOrderId() +"</a>" + "</td><td style=\"text-align:right\">" +
 								 			  currency.format(total) + "</td></tr>";
 				}
 				
